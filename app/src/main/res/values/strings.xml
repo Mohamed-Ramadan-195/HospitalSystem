@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Hospital System</string>
+
+    // splash screen
+    <string name="loading">Loading …</string>
+
+    // login screen
+    <string name="welcome_back">Welcome back !</string>
+    <string name="to_continue_login_now">To Continue , Login Now</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+
+    // home screens
+    <string name="tasks">Tasks</string>
+    <string name="attendance_leaving">Attendance - Leaving</string>
+    <string name="reports">Reports</string>
+    <string name="calls">Calls</string>
+    <string name="cases">Cases</string>
+    <string name="mohamed_ramadan">Mohamed Ramadan</string>
+    <string name="specialist_receptionist">Specialist , Receptionist</string>
+    <string name="specialist_hr">Specialist , HR</string>
+    <string name="specialist_doctor">Specialist , Doctor</string>
+    <string name="specialist_nurse">Specialist , Nurse</string>
+    <string name="employee">Employee</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
