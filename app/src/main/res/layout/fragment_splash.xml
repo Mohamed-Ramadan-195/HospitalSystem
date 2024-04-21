@@ -7,7 +7,7 @@
     android:background="@color/white"
     tools:context=".ui.splash.SplashFragment">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/top_texture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline25h" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bottom_texture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
