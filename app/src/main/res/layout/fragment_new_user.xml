@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.NewUserFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/top_texture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_texture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bottom_texture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/bottom_texture" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline3h" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintTop_toTopOf="@id/guideline3h"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:hint="@string/first_name"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_10sdp"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <View
+            android:id="@+id/firstNameLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/firstNameEditText"
+            app:layout_constraintTop_toTopOf="@id/firstNameEditText"
+            app:layout_constraintBottom_toBottomOf="@id/firstNameEditText" />
+
+        <EditText
+            android:id="@+id/secondNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:hint="@string/last_name"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_10sdp"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:background="@drawable/custom_edit_text"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/firstNameEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <View
+            android:id="@+id/secondNameLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/secondNameEditText"
+            app:layout_constraintTop_toTopOf="@id/secondNameEditText"
+            app:layout_constraintBottom_toBottomOf="@id/secondNameEditText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/secondNameEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/gender_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/gender"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/genderLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/genderTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/genderTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/genderTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/specialistTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/genderTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/specialistSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/specialist_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/specialist"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/specialistLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/specialistTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/specialistTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/specialistTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dateTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/specialistTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/dateSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/outline_date_range_24"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/date_of_birth"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/dateLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/dateTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/dateTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/dateTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/statusTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/dateTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/statusSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/status_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/status"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/statusLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/statusTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/statusTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/statusTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/statusTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/phoneSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/phone_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/phoneLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/phoneTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/phoneTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/phoneTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/phoneTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/emailSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/email_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/e_mail"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/emailLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/emailTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/emailTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/emailTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/addressSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/address_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/address"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/addressLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/addressTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/addressTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/addressTextInputLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/addressTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <AutoCompleteTextView
+                android:id="@+id/passwordSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/password_icon"
+                android:drawablePadding="@dimen/_8sdp"
+                android:inputType="none"
+                android:hint="@string/password"
+                android:textColorHint="@color/grey" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/passwordLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:background="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/passwordTextInputLayout"
+            app:layout_constraintTop_toTopOf="@id/passwordTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/passwordTextInputLayout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createUserButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_28sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/create_user"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_color"
+            app:cornerRadius="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

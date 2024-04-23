@@ -8,7 +8,7 @@
     <string name="welcome_back">Welcome back !</string>
     <string name="to_continue_login_now">To Continue , Login Now</string>
     <string name="login">Login</string>
-    <string name="email">Email</string>
+    <string name="email">Email Address</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password ?</string>
 
@@ -24,10 +24,34 @@
     <string name="specialist_doctor">Specialist , Doctor</string>
     <string name="specialist_nurse">Specialist , Nurse</string>
     <string name="employee">Employee</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // complete fragment
     <string name="complete_message">The request has been canceled \n successfully</string>
     <string name="back_to_home">Back to home</string>
+
+    // create report fragment
     <string name="create_report">Create Report</string>
+
+    // new user fragment
+    <string name="new_user">New user</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="gender">Gender</string>
+    <string name="specialist">Specialist</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="status">Status</string>
+    <string name="phone_number">Phone number</string>
+    <string name="e_mail">E-mail</string>
+    <string name="address">Address</string>
+    <string name="create_user">Create user</string>
+    <string name="my_profile">My Profile</string>
+    <string name="name">Ebrahem Elzainy</string>
+    <string name="specialist_doctor_profile">Specialist - Doctor</string>
+    <string name="male">Male</string>
+    <string name="_29_03_1997">29-03-1997</string>
+    <string name="mansoura_shirben">Mansoura , Shirben</string>
+    <string name="single">Single</string>
+    <string name="ebrahemelzainy_gmail_com">ebrahemelzainy@gmail.com</string>
+    <string name="_096521145523">096521145523</string>
 
 </resources>

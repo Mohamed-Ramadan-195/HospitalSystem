@@ -46,7 +46,7 @@
         android:id="@+id/backToHomeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
         android:paddingVertical="@dimen/_10sdp"
         android:text="@string/back_to_home"
         android:textColor="@color/white"

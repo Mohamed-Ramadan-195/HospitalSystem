@@ -8,14 +8,13 @@
     android:background="@color/white"
     tools:context=".ui.login.LoginFragment">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/top_texture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/top_texture"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="top_texture" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20h"
@@ -66,7 +65,8 @@
         android:drawableStart="@drawable/outline_email_24"
         android:drawablePadding="@dimen/_10sdp"
         android:background="@drawable/custom_edit_text"
-        app:layout_constraintTop_toBottomOf="@id/loginNowText" />
+        app:layout_constraintTop_toBottomOf="@id/loginNowText"
+        android:inputType="textEmailAddress" />
 
     <View
         android:id="@+id/emailLine"
@@ -90,7 +90,8 @@
         android:drawableEnd="@drawable/outline_remove_red_eye_24"
         android:drawablePadding="@dimen/_10sdp"
         android:background="@drawable/custom_edit_text"
-        app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+        app:layout_constraintTop_toBottomOf="@id/emailEditText"
+        android:inputType="textPassword" />
 
     <View
         android:id="@+id/passwordLine"
@@ -102,7 +103,7 @@
         app:layout_constraintTop_toTopOf="@id/passwordEditText"
         app:layout_constraintBottom_toBottomOf="@id/passwordEditText" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/forgotPasswordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -125,7 +126,7 @@
         app:cornerRadius="@dimen/_4sdp"
         app:layout_constraintTop_toBottomOf="@id/forgotPasswordText" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bottom_texture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
