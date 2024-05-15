@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:backgroundTint="@color/white"
-    tools:context=".ui.users.doctor.DoctorHomeFragment">
+    tools:context=".ui.users.doctor.DoctorHomeFragment" >
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5h"
@@ -113,7 +114,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/blue_card" >
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/callsIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,7 +155,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/purple_card" >
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/reportsIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -197,7 +198,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/green_card" >
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/tasksIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -238,7 +239,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/primary_color_card" >
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/attendanceIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -292,7 +293,7 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.15" />
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/casesIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

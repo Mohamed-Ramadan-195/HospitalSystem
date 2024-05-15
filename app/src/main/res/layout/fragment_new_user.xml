@@ -55,7 +55,6 @@
             app:layout_constraintTop_toTopOf="@id/guideline3h"
             app:layout_constraintStart_toStartOf="parent" />
 
-
         <EditText
             android:id="@+id/firstNameEditText"
             android:layout_width="match_parent"

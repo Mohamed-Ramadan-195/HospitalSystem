@@ -13,11 +13,6 @@ class HrHomeFragment : Fragment() {
     private var _binding: FragmentHrHomeBinding ?= null
     private val binding get() = _binding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_hr_home, container, false)
     }

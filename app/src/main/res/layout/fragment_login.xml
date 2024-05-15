@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.login.LoginFragment">
+    tools:context=".ui.login.LoginFragment" >
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/top_texture"
@@ -23,7 +23,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.15" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/loginIcon"
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp"

@@ -13,11 +13,6 @@ class DoctorHomeFragment : Fragment() {
     private var _binding: FragmentDoctorHomeBinding ?= null
     private val binding get() = _binding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_doctor_home, container, false)
     }

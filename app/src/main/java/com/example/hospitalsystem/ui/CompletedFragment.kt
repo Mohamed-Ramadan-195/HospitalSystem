@@ -13,11 +13,6 @@ class CompletedFragment : Fragment() {
     private var _binding: FragmentCompletedBinding ?= null
     private val binding get() = _binding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_completed, container, false)
     }
@@ -30,9 +25,7 @@ class CompletedFragment : Fragment() {
     }
 
     private fun onClicks() {
-        binding?.backToHomeButton?.setOnClickListener {
-
-        }
+        binding?.backToHomeButton?.setOnClickListener { }
     }
 
     override fun onDestroyView() {
