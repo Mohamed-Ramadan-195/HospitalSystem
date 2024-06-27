@@ -58,7 +58,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.50" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/personImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline5h" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/personName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toTopOf="@id/personImage"
         app:layout_constraintStart_toEndOf="@id/personImage" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/personPosition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
         app:layout_constraintStart_toStartOf="@id/personName"
         app:layout_constraintTop_toBottomOf="@id/personName" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/notificationIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="@id/tasksCard"
         app:layout_constraintTop_toTopOf="@id/personImage" />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/callsCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -124,7 +124,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/callsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -137,9 +137,9 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/reportsCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -165,7 +165,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/reportsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -178,9 +178,9 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/tasksCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -208,7 +208,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tasksText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -221,9 +221,9 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/attendanceCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -249,7 +249,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/attendanceText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -262,9 +262,10 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/casesCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginVertical="@dimen/_4sdp"
@@ -302,7 +303,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/iconGuideline"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/casesText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -315,6 +316,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

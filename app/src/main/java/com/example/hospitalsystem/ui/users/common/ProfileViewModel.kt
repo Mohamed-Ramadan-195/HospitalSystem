@@ -1,4 +1,4 @@
-package com.example.hospitalsystem.ui.users.all
+package com.example.hospitalsystem.ui.users.common
 
 import androidx.lifecycle.ViewModel
 

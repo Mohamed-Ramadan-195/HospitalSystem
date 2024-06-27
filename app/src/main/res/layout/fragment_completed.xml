@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.CompletedFragment">
+    tools:context=".ui.CompletedFragment" >
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline40h"
@@ -16,7 +16,7 @@
         app:layout_constraintGuide_percent="0.30" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/complete_icon"
+        android:id="@+id/completeIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/complete"
@@ -25,6 +25,7 @@
         app:layout_constraintTop_toTopOf="@id/guideline40h" />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/canceledSuccessfullySentence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_4sdp"
@@ -34,7 +35,7 @@
         android:textSize="@dimen/_13ssp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/complete_icon" />
+        app:layout_constraintTop_toBottomOf="@id/completeIcon" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline90h"

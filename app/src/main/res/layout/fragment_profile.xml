@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/profile_background"
-    tools:context=".ui.users.all.ProfileFragment" >
+    tools:context=".ui.users.common.ProfileFragment" >
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3h"
@@ -15,16 +15,17 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.03" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/my_profile"
         android:textColor="@color/white"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline3h" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3h"
+        tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/backButton"
@@ -33,8 +34,9 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:src="@drawable/baseline_arrow_back_24"
         android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline3h"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:ignore="ImageContrastCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20h"
@@ -68,16 +70,17 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.15" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textColor="@color/primary_color"
             android:textSize="@dimen/_11ssp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guideline15h" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline15h"
+            tools:ignore="TextContrastCheck" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline25h"
@@ -92,10 +95,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_16sdp"
             android:src="@drawable/specialist_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/guideline25h"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/specialistText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -110,13 +114,14 @@
             android:id="@+id/genderIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/gender_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/specialistIcon"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/genderText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,13 +136,14 @@
             android:id="@+id/dateIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/date_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/genderIcon"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/dateText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -152,13 +158,14 @@
             android:id="@+id/locationIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/location_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/dateIcon"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/locationText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,13 +180,14 @@
             android:id="@+id/statusIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/status_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/locationIcon"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/statusText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -194,13 +202,14 @@
             android:id="@+id/emailIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/email_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/statusIcon"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/emailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -215,13 +224,14 @@
             android:id="@+id/phoneIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/phone_icon_profile"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/emailIcon"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/phoneText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -259,10 +269,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ellipse_profile_edit"
+        app:layout_constraintBottom_toBottomOf="@id/cardLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardLayout"
-        app:layout_constraintBottom_toBottomOf="@id/cardLayout" />
+        tools:ignore="ImageContrastCheck" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/editButton"

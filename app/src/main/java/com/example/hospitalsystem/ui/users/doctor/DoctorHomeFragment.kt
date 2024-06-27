@@ -25,7 +25,12 @@ class DoctorHomeFragment : Fragment() {
     }
 
     private fun onClicks() {
-
+        binding?.notificationIcon?.setOnClickListener {  }
+        binding?.callsCard?.setOnClickListener {  }
+        binding?.tasksCard?.setOnClickListener {  }
+        binding?.reportsCard?.setOnClickListener {  }
+        binding?.attendanceCard?.setOnClickListener {  }
+        binding?.casesCard?.setOnClickListener {  }
     }
 
     override fun onDestroyView() {

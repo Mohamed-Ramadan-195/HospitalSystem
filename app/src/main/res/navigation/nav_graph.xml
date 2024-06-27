@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/splashFragment" >
 
     <fragment
         android:id="@+id/splashFragment"
@@ -23,11 +23,45 @@
         <action
             android:id="@+id/action_loginFragment_to_receptionistHomeFragment"
             app:destination="@id/receptionistHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_doctorHomeFragment"
+            app:destination="@id/doctorHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_hrHomeFragment"
+            app:destination="@id/hrHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nurseHomeFragment"
+            app:destination="@id/nurseHomeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/receptionistHomeFragment"
         android:name="com.example.hospitalsystem.ui.users.receptionist.ReceptionistHomeFragment"
         android:label="fragment_receptionist_home"
         tools:layout="@layout/fragment_receptionist_home" />
+
+    <fragment
+        android:id="@+id/doctorHomeFragment"
+        android:name="com.example.hospitalsystem.ui.users.doctor.DoctorHomeFragment"
+        android:label="fragment_doctor_home"
+        tools:layout="@layout/fragment_doctor_home" />
+
+    <fragment
+        android:id="@+id/hrHomeFragment"
+        android:name="com.example.hospitalsystem.ui.users.hr.HrHomeFragment"
+        android:label="fragment_hr_home"
+        tools:layout="@layout/fragment_hr_home" />
+
+    <fragment
+        android:id="@+id/nurseHomeFragment"
+        android:name="com.example.hospitalsystem.ui.users.nurse.NurseHomeFragment"
+        android:label="fragment_nurse_home"
+        tools:layout="@layout/fragment_nurse_home" />
+
+    <fragment
+        android:id="@+id/newUserFragment"
+        android:name="com.example.hospitalsystem.ui.NewUserFragment"
+        android:label="fragment_new_user"
+        tools:layout="@layout/fragment_new_user" />
 
 </navigation>

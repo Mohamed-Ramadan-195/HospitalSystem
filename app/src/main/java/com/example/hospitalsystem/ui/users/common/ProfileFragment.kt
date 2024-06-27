@@ -1,4 +1,4 @@
-package com.example.hospitalsystem.ui.users.all
+package com.example.hospitalsystem.ui.users.common
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

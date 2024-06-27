@@ -11,7 +11,7 @@ import com.example.hospitalsystem.databinding.FragmentCreateReportBinding
 class CreateReportFragment : Fragment() {
 
     private var _binding: FragmentCreateReportBinding ?= null
-    private val binding get() = _binding
+    private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_create_report, container, false)
@@ -25,12 +25,8 @@ class CreateReportFragment : Fragment() {
     }
 
     private fun onClicks() {
-        binding?.backButton?.setOnClickListener {
-
-        }
-        binding?.createReportButton?.setOnClickListener {
-
-        }
+        binding?.backButton?.setOnClickListener {   }
+        binding?.createReportButton?.setOnClickListener {   }
     }
 
     override fun onDestroyView() {

@@ -25,9 +25,7 @@ class NewUserFragment : Fragment() {
     }
 
     private fun onClicks() {
-        binding?.backButton?.setOnClickListener {
-
-        }
+        binding?.backButton?.setOnClickListener {   }
     }
 
     override fun onDestroyView() {
